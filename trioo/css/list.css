@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/*商品列表*/
+main {
+  width: 1210px;
+  background: #e8e8e8;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #2f2f2f;
+}
+
+main .list-filtrate {
+  width: 1208px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 18px;
+  background: white;
+}
+
+main .list-filtrate .list-filtrate-top {
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 36px;
+  padding-right: 18px;
+}
+
+main .list-filtrate .list-filtrate-top span {
+  display: inline-block;
+}
+
+main .list-filtrate .list-filtrate-top span:first-child {
+  background: url(/images/list/filtrate.jpg) no-repeat center left;
+  padding-left: 24px;
+  float: left;
+}
+
+main .list-filtrate .list-filtrate-top span:last-child {
+  float: right;
+  color: black;
+  cursor: pointer;
+  padding-right: 18px;
+  background: url(/images/list/close_attribute.jpg) no-repeat center right;
+}
+
+main .list-filtrate .list-filtrate-bottom {
+  padding-left: 36px;
+  padding-right: 18px;
+}
+
+main .list-filtrate .list-filtrate-bottom span {
+  display: inline-block;
+}
+
+main .list-filtrate .list-filtrate-bottom span input {
+  float: left;
+}
+
+main .list-filtrate .list-filtrate-bottom span:first-child {
+  font-size: 14px;
+}
+
+main .list-filtrate .list-filtrate-bottom .top {
+  margin-top: 24px;
+}
+
+main .list-filtrate .list-filtrate-bottom .center, main .list-filtrate .list-filtrate-bottom .bottom {
+  margin-top: 10px;
+}
+
+main .list-filtrate .list-filtrate-bottom .bottom {
+  margin-bottom: 10px;
+}
+
+main .list-filtrate .list-filtrate-bottom .top span:first-child, main .list-filtrate .list-filtrate-bottom .center span:first-child, main .list-filtrate .list-filtrate-bottom .bottom span:first-child {
+  width: 90px;
+  height: 20px;
+}
+
+main .list-nav {
+  width: 1208px;
+  height: 42px;
+  border: 1px solid #ccc;
+  margin-top: 18px;
+  background: white;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+main .list-nav span {
+  display: inline-block;
+}
+
+main .list-nav .list-proudect, main .list-nav .list-gless {
+  width: 110px;
+  height: 42px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  float: left;
+}
+
+main .list-nav .list-gless {
+  background: url(/images/list/tryon.jpg) no-repeat 88px center;
+}
+
+main .list-nav .list-search {
+  min-width: 138px;
+  height: 42px;
+  margin-top: 0;
+  margin-left: 78px;
+  background: url(/images/list/search-close.jpg) no-repeat left center;
+  padding-left: 24px;
+  float: left;
+  text-align: left;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+main .list-nav ul {
+  width: 474px;
+  height: 42px;
+  float: right;
+}
+
+main .list-nav ul li {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 4px;
+  width: 66px;
+  height: 42px;
+}
+
+main .list-nav ul li i {
+  display: inline-block;
+  font-style: normal;
+}
+
+main .list-nav ul li span {
+  display: inline-block;
+  width: 66px;
+  height: 42px;
+}
+
+main .list-nav ul li:nth-child(1) {
+  width: 84px;
+}
+
+main .list-nav ul li:nth-child(1) > span {
+  width: 84px;
+}
+
+main .list-nav ul li:nth-child(2) > span {
+  background: url(/images/list/first.jpg) no-repeat center center;
+}
+
+main .list-nav ul li:nth-child(3), main .list-nav ul li:nth-child(5) {
+  width: 84px;
+}
+
+main .list-nav ul li:nth-child(3) > span {
+  width: 85px;
+  background: url(/images/list/prev.jpg) no-repeat center center;
+}
+
+main .list-nav ul li:nth-child(4) {
+  width: 55px;
+}
+
+main .list-nav ul li:nth-child(4) > select {
+  height: 24px;
+  float: left;
+  margin-top: 9px;
+}
+
+main .list-nav ul li:nth-child(5) > span {
+  width: 85px;
+  background: url(/images/list/next.jpg) no-repeat center center;
+}
+
+main .list-nav ul li:nth-child(6) > span {
+  background: url(/images/list/last.jpg) no-repeat center center;
+}
+
+main .list-content {
+  width: 102%;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+main .list-content li {
+  width: 394px;
+  height: 346px;
+  float: left;
+  margin: 0 9px 9px 2px;
+}
+
+main .list-content li dl {
+  width: 394px;
+  height: 342px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+main .list-content li dl dt {
+  width: 394px;
+  height: 278px;
+  background: url(/images/list/pic1.jpg) no-repeat center 0px;
+  position: relative;
+}
+
+main .list-content li dl dt span {
+  display: inline-block;
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+main .list-content li dl dt i {
+  display: inline-block;
+  position: absolute;
+  width: 41px;
+  height: 38px;
+  bottom: 3px;
+  right: 2px;
+  background: url(/images/list/bg-close.jpg) no-repeat center center;
+  cursor: pointer;
+}
+
+main .list-content li dl dt i:hover {
+  background: url(/images/list/bg-open.jpg) no-repeat center center;
+}
+
+main .list-content li dl dt .list-mousebg {
+  position: absolute;
+  bottom: 8px;
+  height: 50px;
+  left: 100px;
+}
+
+main .list-content li dl dt .list-mousebg li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 0px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+main .list-content li dl dt .list-mousebg li:hover {
+  border: 1px solid #fa4904;
+}
+
+main .list-content li dl dd {
+  padding-top: 8px;
+  border-top: 1px solid #ccc;
+  background: white;
+}
+
+main .list-content li dl dd p {
+  text-align: center;
+  color: #000;
+}
+
+main .list-content li dl dd p span {
+  display: inline-block;
+  height: 16px;
+  border-right: 1px solid #000;
+  line-height: 16px;
+  text-align: center;
+  padding-right: 4px;
+}
+
+main .list-content li dl dd p span:last-child {
+  border: 0;
+}
+
+main .list-content li dl:hover {
+  width: 395px;
+  height: 342px;
+  box-shadow: 1px 1px 3px #ccc,1px -1px 3px #ccc,-1px 1px 3px #ccc,-1px -1px 3px #ccc;
+  cursor: pointer;
+}
+
+main .list-content li .list-mousebg {
+  display: none;
+}
+
+main .list-content li dl:hover .list-mousebg {
+  display: block;
+}
+
+main .list-footer {
+  width: 1208px;
+  height: 42px;
+  background: white;
+}

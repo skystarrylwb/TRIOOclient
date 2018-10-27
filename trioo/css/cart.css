@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*购物车列表*/
+main {
+  width: 1210px;
+  background: #e8e8e8;
+  margin: 0 auto;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+main .cart-nav {
+  width: 1208px;
+  height: 40px;
+  border: 1px solid #2f2f2f;
+  background: #eff5ea;
+}
+
+main .cart-nav p {
+  height: 40px;
+  padding-left: 32px;
+  line-height: 40px;
+  color: #3d6611;
+  background: url(/images/cart/i-msg.gif) no-repeat 14px center;
+}
+
+main .cart-content {
+  width: 1164px;
+  margin-top: 10px;
+  padding: 0px 22px;
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+main .cart-content h3 {
+  width: 1164px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+  background: url(/images/cart/button-title.gif) no-repeat 0px -108px;
+}
+
+main .cart-content table {
+  width: 1164px;
+  border-collapse: collapse;
+}
+
+main .cart-content table thead th {
+  width: 1144px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 18px;
+}
+
+main .cart-content table tbody {
+  width: 1162px;
+  height: 162px;
+  border: 1px solid #ccc;
+  border-top: 2px solid #ccc;
+  display: block;
+  color: #2f2f2f;
+  margin-top: 10px;
+}
+
+main .cart-content table tbody tr {
+  height: 50px;
+  width: 1164px;
+  border: 1px solid #ccc;
+}
+
+main .cart-content table tbody tr td {
+  width: 54px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+main .cart-content table tbody tr:first-child td:first-child {
+  width: 142px;
+  height: 106px;
+  background: orange;
+}
+
+main .cart-content table tbody tr:first-child td:nth-child(2) {
+  width: 692px;
+  padding-left: 20px;
+  color: #000;
+}
+
+main .cart-content table tbody tr:first-child td:nth-child(3), main .cart-content table tbody tr:first-child td:nth-child(4), main .cart-content table tbody tr:first-child td:nth-child(5) {
+  width: 102px;
+  text-align: center;
+}
+
+main .cart-content table tbody tr:first-child td:nth-child(5) a {
+  color: #000;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(1) {
+  width: 220px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) {
+  width: 472px;
+  height: 50px;
+  background: #dddddd;
+  position: relative;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) p {
+  padding-left: 12px;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) p span {
+  display: inline-block;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) p span:first-child {
+  margin-right: 10px;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) p:first-child {
+  margin-bottom: 6px;
+}
+
+main .cart-content table tbody tr:nth-child(2) td:nth-child(2) a:last-child {
+  display: inline-block;
+  width: 83px;
+  height: 29px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: url(/images/cart/up.png) no-repeat center center;
+  text-align: center;
+  line-height: 29px;
+  padding-left: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+main .cart-content table tbody tr:last-child p {
+  padding-left: 40px;
+}
+
+main .cart-content table tbody tr:last-child p span:last-child {
+  margin-left: 24px;
+}
+
+main .cart-content table tfoot {
+  width: 1162px;
+  font-size: 14px;
+}
+
+main .cart-content table tfoot tr:first-child {
+  height: 50px;
+  background: url(/images/cart/close.png) no-repeat 0px center;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+main .cart-content table tfoot tr:first-child td {
+  padding-left: 18px;
+  width: 74px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+main .cart-content table tfoot tr:nth-child(2) {
+  height: 144px;
+  width: 1164px;
+  display: inline-block;
+  position: relative;
+  margin-top: 12px;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:first-child {
+  margin-bottom: 4px;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:nth-child(2) span {
+  color: #a7212a;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:last-child {
+  position: absolute;
+  height: 41px;
+  width: 276px;
+  right: 0px;
+  bottom: 88px;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:last-child a {
+  display: inline-block;
+  width: 133px;
+  height: 40px;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:last-child a:first-child {
+  height: 41px;
+  margin-right: 10px;
+  background: url(/images/cart/going.jpg) no-repeat center center;
+}
+
+main .cart-content table tfoot tr:nth-child(2) td p:last-child a:last-child {
+  background: url(/images/cart/total.jpg) no-repeat center center;
+}

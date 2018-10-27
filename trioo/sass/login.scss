@@ -1,0 +1,118 @@
+/*注册界面*/
+main{
+    width: 1210px;
+    background: #e8e8e8;
+    margin:0 auto;
+    overflow: hidden;
+    .login{
+        width: 1024px;
+        height: 400px;
+        margin:0 auto;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        background: white;
+        border:1px solid #ccc;
+        .login-left{
+            width: 508px;
+            float: left;
+            h3{
+                margin-top:42px;
+                height: 40px;
+                border-bottom: 1px solid #ccc;
+                font-weight: normal;
+                padding-left: 22px;
+                span{
+                    display: block;
+                    height: 40px;
+                    width:110px;
+                    line-height: 40px;
+                    border: 1px solid;
+                    border-bottom: 0;
+                    text-align: center;
+                    letter-spacing: 16px;
+                }
+            }
+            form{
+                width: 366px;
+                height: 240px;
+                margin:0 auto;
+                margin-top:62px;
+                position: relative;
+                li{
+                    font-size: 12px;
+                    list-style: none;
+                    position: absolute;
+                    color:red;
+                    display: none;
+                }
+                .login_li{
+                    top:8px;
+                    right: -76px;
+                }
+                .login_lis{
+                    top:66px;
+                    right:-82px;
+                }
+                span{
+                    display: inline-block;
+                    height: 32px;
+                    line-height: 32px;
+                    float: left;
+                }
+                span:nth-child(3){
+                    margin-top:24px;
+                    letter-spacing: 8px;
+                }
+                input{
+                    width: 289px;
+                    height: 30px;
+                    float: right;
+                    border: 1px solid #ccc;
+                }
+                input:nth-child(4){
+                    margin-top:24px;
+                }
+                input:nth-child(5){
+                    float: left;
+                    margin-top:24px;
+                    width: 104px;
+                    height: 32px;
+                    margin-left:138px;
+                    margin-bottom: 32px;
+                    border:0;
+                    background: #d22133;
+                    font-size: 16px;
+                    color: white;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                p:nth-child(6){
+                    float: left;
+                    font-size: 12px;
+                    text-align: center;
+                    width: 366px;
+                    a{
+                        color: #a7212a;
+                    }
+                }
+            }
+        }
+        .login-right{
+            width: 432px;
+            height: 312px;
+            margin-top: 42px;
+            float: right;
+            background: url(/images/login/pic-big.jpg) no-repeat center center;
+            position: relative;
+            a{
+                display: inline-block;
+                width: 94px;
+                height: 29px;
+                background: url(/images/login/button.jpg);
+                position: absolute;
+                top:82px;
+                left: 140px;
+            }
+        }
+    }
+}

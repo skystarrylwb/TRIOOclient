@@ -1,0 +1,224 @@
+/*商品购买*/
+main{
+    width: 1210px;
+    background: #e8e8e8;
+    margin:0 auto;
+    overflow: hidden;
+    .detail-wrap{
+        width: 1164px;
+        border: 1px solid #ccc;
+        border-bottom:2px solid #ccc;
+        background: white;
+        margin-top:8px;
+        padding: 0px 22px;
+        h1{
+            height: 36px;
+            background: url(/images/detail/shopping-title.gif) no-repeat 0px -72px;
+            margin-top:16px;
+        }
+        .center{
+            width: 1126px;
+            height: 240px;
+            border: 1px solid #ccc;
+            background: #f3f3f3;
+            margin-top:30px;
+            font-size: 12px;
+            padding-left: 36px;
+            position: relative;
+            .center-wrap{
+                h3{
+                    padding-left: 14px;
+                    padding-top:40px;
+                    a{
+                        color: black;
+                    }
+                }
+                ul{
+                    margin-top:20px;
+                    float:left;
+                    color: #2f2f2f;
+                    list-style: none;
+                    }
+                ul:nth-child(2){
+                    width: 206px;
+                    padding-left: 40px;
+                    border-right:1px dashed #494949;
+                    span{
+                        display: inline-block;
+                        margin-left:92px;
+                    }
+                    li{
+                        padding:15px 0;
+                        select{
+                            margin-left:28px;
+                        }
+                    }
+                }
+                ul:nth-child(3){
+                    margin-left: 34px;
+                    width:96px;
+                    border-right:1px solid #494949;
+                    li{
+                        padding:15px 0;
+                    }
+                }
+                ul:nth-child(4){
+                    position: relative;
+                    width: 180px;
+                    border-right:1px dashed #494949;
+                    span{
+                        display: inline-block;
+                    }
+                    span:first-child{
+                        padding-left:86px;
+                    }
+                    span:nth-child(2){
+                        width: 62px;
+                        height: 20px;
+                        background: url(/images/detail/bg.png) no-repeat center center;
+                        position: absolute;
+                        top:16px;
+                        left:0px;
+                    }
+                    li{
+                        padding:15px 0;
+                        padding-left: 86px;
+                    }
+                }
+                ul:nth-child(5){
+                    padding-left: 24px;
+                    li{
+                        padding:15px 0;
+                    }
+                }
+            }
+            .detail-p{
+                position: absolute;
+                bottom: 20px;
+                left:36px;
+            }
+            .center-right{
+            width: 116px;
+            height: 192px;
+            position: absolute;
+            top: 36px;
+            right: 30px;
+            a{
+                color: #cc0000;
+                display: inline-block;
+                width: 102px;
+                span{
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    float: right;
+                    background: url(/images/detail/wenhao.png) no-repeat center center;
+                }
+            }
+            button{
+                width: 102px;
+                height: 30px;
+                margin-top: 144px;
+                margin-left: 5px;
+                border:0;
+                background: url(/images/detail/up.png) no-repeat center center;
+                cursor: pointer;
+            }
+        }
+        }
+        .bottom{
+            width: 1164px;
+            font-size:12px;
+            margin-top: 18px;
+            color: #2f2f2f;
+            p{
+                padding-left: 36px;
+            }
+            ul:nth-child(2){
+                width: 1164px;
+                height: 40px;
+                border-bottom: 1px solid #ccc;
+                font-size: 16px;
+                margin-top:10px;
+                li{
+                    height:40px;
+                    line-height: 40px;
+                    padding:0 36px;
+                    background: #ccc;
+                    margin-right: 4px;
+                    float: left;
+                }
+                li:first-child{
+                    margin-left:20px;
+                }
+                .active_meno{
+                    background: white;
+                    border: 1px solid;
+                    border-bottom: 0;
+                    }
+            }
+            .detail_lists{
+                width: 1164px;
+                margin-top:10px;
+                border:1px solid #ccc;
+                background: #f3f3f3;
+                display: none;
+                li{
+                    height: 40px;
+                    width: 1164px;
+                    line-height: 40px;
+                    text-align: left;
+                    margin-left:0;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                    }
+                    input{
+                        margin-left: 10px;
+                    }
+                    span:nth-child(2){
+                    margin-left: 20px;
+                    width: 210px;
+                    }
+                    span:nth-child(3){
+                        width: 356px;
+                    }
+                    span:last-child{
+                        color: #cc0000;
+                    }
+                }
+                li:last-child{
+                    margin-bottom: 10px;
+                }
+
+            }
+            .detail_list{
+                display: block;
+            }
+        }
+        .detail-total{
+            width: 146px;
+            height: 70px;
+            margin-top: 36px;
+            margin-bottom: 46px;
+            margin-left:996px;
+            p{
+                padding-left:14px;
+            }
+            button{
+                width: 133px;
+                height: 40px;
+                margin-top:12px;
+                border: 0;
+                background: url(/images/detail/goshopping-opping.jpg) no-repeat center center;
+                cursor: pointer;
+                a{
+                    display: inline-block;
+                    width: 133px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+

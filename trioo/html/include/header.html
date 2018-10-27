@@ -1,0 +1,106 @@
+<header>
+        <div class="header-box">
+            <div class="wrap">
+            <ul>
+                <li><a href="/html/login.html">登录</a></li>
+                <li><a href="/html/register.html">注册</a></li>
+                <li><a href="#">我的诚镜</a></li>
+                <li><a href="/html/cart.html">购物车(<span>0</span>)</a></li>
+                <li><a href="#">去结算</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">English</a></li>
+                <li><img src="/images/tel.png" class="left"><span>4008200750</span></li>
+                <li class="search">
+                    <input type="text" name="" placeholder="black" value="">
+                    <input type="image" src="/images/search.jpg" >
+                    <div class="suggest" id="sug"></div>
+                </li>
+                
+            </ul>
+            </div>
+        </div>
+        <nav>
+            <div class="log"><a href="index.html"><img src="/images/log.jpg"></a></div>
+            <ul>
+                <li><a href="/index.html"></a></li>
+                <li><a href="/html/list.html" class="men-a"></a>
+                    <div class="meno men p_men">
+                    </div>
+                </li>
+                <li><a href="/html/list.html" class="woman-a"></a>
+                    <div class="meno men p_women">
+                    </div>
+                </li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#" class="last-a"></a>
+                    <div class="meno men p_last">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<script type="text/html" id="header_list">
+                        <div class="left">
+                            <dl>
+                                <dt>热门推荐</dt>
+                                <dd>
+                                   <a href="#">{{list[0].desc1}}</a>
+                                    <a href="#">{{list[1].desc1}}</a>
+                                    <a href="#">{{list[2].desc1}}</a>
+                                    <a href="#">{{list[3].desc1}}</a> 
+                                </dd>
+                            </dl>  
+                            <dl>
+                                <dt>风格</dt>
+                                <dd>
+                                    <a href="#">{{list[0].desc2}}</a>
+                                    <a href="#">{{list[1].desc2}}</a>
+                                    <a href="#">{{list[2].desc2}}</a>
+                                    <a href="#">{{list[3].desc2}}</a>
+                                    <a href="#">{{list[4].desc2}}</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>框型类型</dt>
+                                <dd>
+                                   <a href="#">{{list[0].desc3}}</a>
+                                    <a href="#">{{list[1].desc3}}</a>
+                                    <a href="#">{{list[2].desc3}}</a>
+                                    <a href="#">{{list[3].desc3}}</a> 
+                                </dd>
+                            </dl>    
+                            <dl>
+                                <dt>材质</dt>
+                                <dd>
+                                    <a href="#">{{list[0].desc4}}</a>
+                                    <a href="#">{{list[1].desc4}}</a>
+                                    <a href="#">{{list[2].desc4}}</a>
+                                    <a href="#">{{list[3].desc4}}</a> 
+                                </dd>
+                            </dl> 
+                            <div class="top-bottom">
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>             
+                        </div>
+                        </script>
+                        <script type="text/html" id="header_img_men">
+                        <div class="right">
+                            <img src="{{body.img1}}">
+                        </div>
+                        </script>
+                        <script type="text/html" id="header_img_women">
+                        <div class="right">
+                            <img src="{{body.img2}}">
+                        </div>
+                        </script>
+                        <script type="text/html" id="header_img_last">
+                        <div class="right">
+                            <img src="{{body.img3}}">
+                        </div>
+                        </script>

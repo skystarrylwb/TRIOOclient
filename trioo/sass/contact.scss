@@ -1,0 +1,298 @@
+/*主体部分*/
+main{
+    width: 1210px;
+    margin:0 auto;
+    background: #e8e8e8;
+    overflow: hidden;
+    .contact-main{
+        width: 1208px;
+        height: 550px;
+        margin-top: 10px;
+        background: white;
+        border:1px solid #ccc;
+        .contact-main-left{
+            width: 848px;
+            height: 536px;
+            margin-top: 12px;
+            float: left;
+            .contact-wrap-top{
+                width: 848px;
+                height: 430px;
+                .wrap-left{
+                width: 567px;
+                height: 425px;
+                margin-left:78px;
+                float: left;
+                position: relative;
+                span{
+                    width: 567px;
+                    height: 425px;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    display: none;
+                    img{
+                        width: 567px;
+                        height: 425px;
+                    }
+                }
+                }
+                .wrap-left:hover{
+                    border:1px solid #666;
+                }
+                .wrap-right{
+                    width: 98px;
+                    height: 266px;
+                    float: right;
+                    padding-top: 10px;
+                    span{
+                        display: inline-block;
+                        width: 98px;
+                        height: 74px;
+                    }
+                }
+                }
+            }
+            .contact-wrap-bottom{
+                width: 640px;
+                height: 78px;
+                margin-left: 36px;
+                margin-top: 12px;
+                padding-top:20px;
+                background: url(/images/contact/contact-line.jpg) no-repeat center 0;
+                ul{
+                    margin-left: 239px;
+                    li{
+                        width: 54px;
+                        height: 54px;
+                        padding-left:10px;
+                        float: left;
+                        .activeZoom {
+                            display: inline-block;
+                        }
+                        .activeZoom img {
+                            border: 2px solid orange;
+                        }
+                        a{
+                            display: inline-block;
+                            width: 54px;
+                            height: 54px;
+                            border:1px solid #ccc;
+                        }
+                    }
+                }
+            }
+        .contact-main-right{
+            width: 352px;
+            height: 546px;
+            border-left: 1px solid #ccc;
+            float: right;
+            margin-top: 4px;
+            font-size: 14px;
+            @mixin contact(){
+                width: 300px;
+                height: 114px;
+                margin-left:24px;
+            }
+            .top{
+                @include contact();
+                .contact-top{
+                    padding-top: 44px;
+                    padding-left: 24px;
+                }
+                .contact-bottom{
+                    padding-top: 24px;
+                    padding-left:24px;
+                    span{
+                        display: inline-block;
+                        height: 14px;
+                        padding:0 5px;
+                        border-right: 1px solid #2f2f2f;
+                        line-height: 14px;
+                        float: left;
+                    }
+                    span:last-child{
+                        border:0;
+                    }
+                }
+            }
+            .center{
+               @include contact();
+               border-top:1px solid #ccc;
+               border-bottom:1px solid #ccc;
+               height: 160px;
+               span{
+                display: inline-block;
+                padding-top: 20px;
+                padding-left: 24px;
+                font-size: 18px;
+                font-weight:bold;
+               }
+               p{
+                padding-top: 2px;
+                padding-left: 24px;
+               }
+               a{
+                display: inline-block;
+                margin-top: 30px;
+                margin-left: 24px;
+                width: 134px;
+                height: 40px;
+                background: url(/images/contact/btn-buy.jpg);
+                border-radius: 5px;
+               }
+            }
+            .bottom{
+                img{
+                    margin-top:40px;
+                    margin-left: 24px;
+                    float: left;
+                }
+                .contact-line{
+                    width: 112px;
+                    height: 52px;
+                    margin-top: 78px;
+                    margin-left:35px;
+                    float: left;
+                    p:first-child{
+                        a{
+                            display:inline-block;
+                            width: 76px;
+                            height: 18px;
+                            background: url(/images/contact/button.jpg) no-repeat;
+                            background-position: -468px -228px;
+                        }
+                    }
+                    p:last-child{
+                        a{
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                            float: left;
+                            margin-left:5px;
+                            background: red;
+                            background: url(/images/contact/icon-sms.gif);
+                        }
+                        a:first-child{
+                            background-position: -96px -26px;
+                        }
+                        a:nth-child(2){
+                            background-position: -2px -26px;
+                        }
+                        a:nth-child(3){
+                            background-position: -50px -26px;
+                        }
+                        a:nth-child(4){
+                            background-position: -72px -26px;
+                        }
+                        a:last-child{
+                            background-position: -27px -26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-particulars{
+        width: 1208px;
+        border:1px solid #ccc;
+        min-height: 120px;
+        margin:18px 0;
+        background:white;
+        .contact-particulars-meno{
+            width: 1190px;
+            height: 38px;
+            font-size: 14px;
+            margin:0 auto;
+            border-bottom: 1px solid #ccc;
+            margin-top: 15px;
+            li{
+                float: left;
+                width: 132px;
+                height: 38px;
+                margin-left:6px;
+                background: #eaeaea;
+                text-align: center;
+                line-height: 38px;
+            }
+            @mixin particulars-li(){
+                border:1px solid #2f2f2f;
+                border-bottom: none;
+                background: white;
+            }
+            .active{
+                @include particulars-li();
+            }
+            li:first-child{
+                margin-left: 16px;
+                background: white;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            li:first-child:hover{
+                border:0;
+            }
+        }
+        .contact-big{
+            width: 1190px;
+            position: relative;
+            .wrap{
+                width: 844px;
+                border-right: 1px dashed #ccc;
+                margin-left:10px;
+                margin-top:4px;
+                font-size: 14px;
+                color: #2f2f2f;
+                padding-top:4px;
+                cursor: pointer;
+                display: none;
+            li{
+                height: 46px;
+                width: 818px;
+                line-height: 46px;
+                text-align: left;
+                margin-left:0;
+                border-bottom: 1px dashed #ccc;
+                span{
+                    display: inline-block;
+                }
+                input{
+                    margin-left: 10px;
+                }
+                span:nth-child(2){
+                margin-left: 20px;
+                width: 210px;
+                }
+                span:nth-child(3){
+                    width: 356px;
+                }
+                span:last-child{
+                    color: #cc0000;
+                }
+            }
+            li:last-child{
+                margin-bottom: 10px;
+            }
+
+        } 
+        .contact_ul{
+                display: block;
+            }
+        .contact-particulars-right{
+            width: 242px;
+            height: 120px;
+            position: absolute;
+            right: 0px;
+            top:24px;
+            a{
+                display: inline-block;
+                margin-top:12px;
+                width: 134px;
+                height: 40px;
+                /*background: url(/images/contact/btn-buy.jpg);*/
+                background: url(/images/contact/btn-buy-gray.jpg);
+            }
+            }
+        }
+    }
+}

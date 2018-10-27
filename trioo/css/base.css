@@ -1,0 +1,694 @@
+@charset "UTF-8";
+/*样式去重*/
+html, body, header, main, nav, footer, dl, dt, dd, ul, ol, li, p, img, form, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+
+ul li {
+  list-style: none;
+}
+
+/*网页头部*/
+header {
+  width: 100%;
+}
+
+header .header-box {
+  width: 100%;
+  height: 36px;
+  background: #e8e8e8;
+  position: fixed;
+  z-index: 999;
+}
+
+header .header-box .wrap {
+  width: 1210px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+header .header-box .wrap ul {
+  float: right;
+}
+
+header .header-box .wrap ul li {
+  float: left;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+header .header-box .wrap ul li a {
+  display: inline-block;
+  height: 14px;
+  border-right: 1px solid #693b69;
+  text-decoration: none;
+  font-size: 12px;
+  color: #494949;
+  padding: 0 12px;
+}
+
+header .header-box .wrap ul li span {
+  font-size: 12px;
+  color: #ab2e36;
+}
+
+header .header-box .wrap ul li .left {
+  padding-left: 6px;
+}
+
+header .header-box .wrap ul .search {
+  margin-left: 8px;
+  position: relative;
+}
+
+header .header-box .wrap ul .search input:first-child {
+  width: 180px;
+  height: 18px;
+  float: left;
+  padding-left: 2px;
+  display: none;
+}
+
+header .header-box .wrap ul .suggest {
+  width: 154px;
+  position: absolute;
+  right: 24px;
+  top: 30px;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+header .header-box .wrap ul .suggest div {
+  width: 154px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+header .header-box .wrap ul .suggest div:hover {
+  background: #2f2f2f;
+  color: white;
+}
+
+header nav {
+  width: 1210px;
+  height: 54px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+}
+
+header nav ul {
+  position: relative;
+}
+
+header nav ul li {
+  float: left;
+  padding: 0 18px;
+}
+
+header nav ul li a {
+  display: block;
+  height: 42px;
+  font-size: 18px;
+}
+
+header nav ul li:nth-child(1) a {
+  width: 75px;
+  background: url(/images/header.gif) no-repeat 0 4px;
+}
+
+header nav ul li:nth-child(1):hover a {
+  background-position: 0 -43px;
+}
+
+header nav ul .men-a {
+  width: 65px;
+  background: url(/images/header.gif) no-repeat -82px 4px;
+}
+
+header nav ul li:nth-child(2):hover .men-a {
+  background-position: -82px -43px;
+}
+
+header nav ul .men {
+  display: none;
+}
+
+header nav ul li:nth-child(2) .meno {
+  width: 581px;
+  height: 297px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 3px 3px 12px #ccc;
+  font-size: 14px;
+  background: white;
+  z-index: 999;
+}
+
+header nav ul li:nth-child(2) .meno .left {
+  position: relative;
+  float: left;
+  height: 297px;
+  width: 360px;
+}
+
+header nav ul li:nth-child(2) .meno .left dl {
+  float: left;
+  width: 70px;
+  margin-left: 25px;
+}
+
+header nav ul li:nth-child(2) .meno .left dl dt {
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+header nav ul li:nth-child(2) .meno .left dl dd {
+  float: left;
+}
+
+header nav ul li:nth-child(2) .meno .left dl dd a {
+  margin-top: 10px;
+  float: left;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  background: none;
+  text-decoration: none;
+  color: #494949;
+}
+
+header nav ul li:nth-child(2) .meno .left dl dd a:hover {
+  background: black;
+  color: white;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom {
+  position: absolute;
+  width: 340px;
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+  bottom: 30px;
+  left: 10px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li {
+  text-align: center;
+  float: left;
+  padding: 0 5px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li a {
+  height: 28px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:first-child {
+  padding: 0 48px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:first-child a {
+  width: 60px;
+  background: url(/images/nav-footer1.gif) no-repeat -680px -4px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:nth-child(2) a {
+  width: 156px;
+  background: url(/images/nav-footer1.gif) no-repeat -172px 0px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:nth-child(3), header nav ul li:nth-child(2) .meno .left .top-bottom ul li:nth-child(4) {
+  margin-top: 10px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:nth-child(3) a {
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat 0px 0px;
+}
+
+header nav ul li:nth-child(2) .meno .left .top-bottom ul li:nth-child(4) a {
+  height: 32px;
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat -498px 0px;
+}
+
+header nav ul li:nth-child(2) .meno .right {
+  float: right;
+}
+
+header nav ul li:nth-child(2) .meno .right img {
+  margin-top: 18px;
+  margin-right: 10px;
+  height: 262px;
+}
+
+header nav ul li:nth-child(2) .meno dl:nth-child(1) {
+  margin-left: 20px;
+}
+
+header nav ul li:nth-child(2) .meno dl:nth-child(2) {
+  width: 40px;
+}
+
+header nav ul li:nth-child(3) .meno {
+  width: 581px;
+  height: 297px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 3px 3px 12px #ccc;
+  font-size: 14px;
+  background: white;
+  z-index: 999;
+}
+
+header nav ul li:nth-child(3) .meno .left {
+  position: relative;
+  float: left;
+  height: 297px;
+  width: 360px;
+}
+
+header nav ul li:nth-child(3) .meno .left dl {
+  float: left;
+  width: 70px;
+  margin-left: 25px;
+}
+
+header nav ul li:nth-child(3) .meno .left dl dt {
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+header nav ul li:nth-child(3) .meno .left dl dd {
+  float: left;
+}
+
+header nav ul li:nth-child(3) .meno .left dl dd a {
+  margin-top: 10px;
+  float: left;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  background: none;
+  text-decoration: none;
+  color: #494949;
+}
+
+header nav ul li:nth-child(3) .meno .left dl dd a:hover {
+  background: black;
+  color: white;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom {
+  position: absolute;
+  width: 340px;
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+  bottom: 30px;
+  left: 10px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li {
+  text-align: center;
+  float: left;
+  padding: 0 5px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li a {
+  height: 28px;
+  background: red;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:first-child {
+  padding: 0 48px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:first-child a {
+  width: 60px;
+  background: url(/images/nav-footer1.gif) no-repeat -680px -4px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:nth-child(2) a {
+  width: 156px;
+  background: url(/images/nav-footer1.gif) no-repeat -172px 0px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:nth-child(3), header nav ul li:nth-child(3) .meno .left .top-bottom ul li:nth-child(4) {
+  margin-top: 10px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:nth-child(3) a {
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat 0px 0px;
+}
+
+header nav ul li:nth-child(3) .meno .left .top-bottom ul li:nth-child(4) a {
+  height: 32px;
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat -498px 0px;
+}
+
+header nav ul li:nth-child(3) .meno .right {
+  float: right;
+}
+
+header nav ul li:nth-child(3) .meno .right img {
+  margin-top: 18px;
+  margin-right: 10px;
+  height: 262px;
+}
+
+header nav ul li:nth-child(3) .meno dl:nth-child(1) {
+  margin-left: 20px;
+}
+
+header nav ul li:nth-child(3) .meno dl:nth-child(2) {
+  width: 40px;
+}
+
+header nav ul li:last-child .meno {
+  width: 581px;
+  height: 297px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 3px 3px 12px #ccc;
+  font-size: 14px;
+  background: white;
+  z-index: 999;
+}
+
+header nav ul li:last-child .meno .left {
+  position: relative;
+  float: left;
+  height: 297px;
+  width: 360px;
+}
+
+header nav ul li:last-child .meno .left dl {
+  float: left;
+  width: 70px;
+  margin-left: 25px;
+}
+
+header nav ul li:last-child .meno .left dl dt {
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+header nav ul li:last-child .meno .left dl dd {
+  float: left;
+}
+
+header nav ul li:last-child .meno .left dl dd a {
+  margin-top: 10px;
+  float: left;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  background: none;
+  text-decoration: none;
+  color: #494949;
+}
+
+header nav ul li:last-child .meno .left dl dd a:hover {
+  background: black;
+  color: white;
+}
+
+header nav ul li:last-child .meno .left .top-bottom {
+  position: absolute;
+  width: 340px;
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+  bottom: 30px;
+  left: 10px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li {
+  text-align: center;
+  float: left;
+  padding: 0 5px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li a {
+  height: 28px;
+  background: red;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:first-child {
+  padding: 0 48px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:first-child a {
+  width: 60px;
+  background: url(/images/nav-footer1.gif) no-repeat -680px -4px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:nth-child(2) a {
+  width: 156px;
+  background: url(/images/nav-footer1.gif) no-repeat -172px 0px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:nth-child(3), header nav ul li:last-child .meno .left .top-bottom ul li:nth-child(4) {
+  margin-top: 10px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:nth-child(3) a {
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat 0px 0px;
+}
+
+header nav ul li:last-child .meno .left .top-bottom ul li:nth-child(4) a {
+  height: 32px;
+  width: 154px;
+  background: url(/images/nav-footer1.gif) no-repeat -498px 0px;
+}
+
+header nav ul li:last-child .meno .right {
+  float: right;
+}
+
+header nav ul li:last-child .meno .right img {
+  margin-top: 18px;
+  margin-right: 10px;
+  height: 262px;
+}
+
+header nav ul li:last-child .meno dl:nth-child(1) {
+  margin-left: 20px;
+}
+
+header nav ul li:last-child .meno dl:nth-child(2) {
+  width: 40px;
+}
+
+header nav ul li:nth-child(3) .woman-a {
+  width: 72px;
+  background: url(/images/header.gif) no-repeat -150px 4px;
+}
+
+header nav ul li:nth-child(3):hover .woman-a {
+  background-position: -150px -43px;
+}
+
+header nav ul li:nth-child(4) a {
+  width: 82px;
+  background: url(/images/header.gif) no-repeat -228px 4px;
+}
+
+header nav ul li:nth-child(4):hover a {
+  background-position: -228px -43px;
+}
+
+header nav ul li:nth-child(5) a {
+  width: 116px;
+  background: url(/images/header.gif) no-repeat -527px 4px;
+}
+
+header nav ul li:nth-child(5):hover a {
+  background-position: -527px -43px;
+}
+
+header nav ul li:last-child .last-a {
+  padding-right: 0;
+}
+
+header nav ul li:last-child .last-a {
+  width: 116px;
+  background: url(/images/header.gif) no-repeat -405px 4px;
+}
+
+header nav ul li:last-child:hover .last-a {
+  background-position: -405px -43px;
+}
+
+header nav .log {
+  float: left;
+}
+
+/*网页尾部*/
+footer {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+footer .top {
+  width: 1210px;
+  height: 110px;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+}
+
+footer .top .wrap {
+  width: 1208px;
+  height: 68px;
+  background: white;
+}
+
+footer .top .wrap li {
+  width: 230px;
+  height: 68px;
+  background: url(/images/footer-pic1.jpg) no-repeat;
+  float: left;
+  border: 0;
+}
+
+footer .top .wrap li a {
+  display: inline-block;
+  width: 230px;
+  height: 68px;
+}
+
+footer .top .wrap li:first-child {
+  background-position: 0px 0px;
+}
+
+footer .top .wrap li:nth-child(2) {
+  background-position: -229px 0px;
+}
+
+footer .top .wrap li:nth-child(3) {
+  padding: 0 16px;
+  background-position: -484px 0px;
+}
+
+footer .top .wrap li:nth-child(4) {
+  padding: 0 8px;
+  background-position: -732px 0px;
+}
+
+footer .top .wrap li:nth-child(5) {
+  width: 240px;
+  background-position: -966px 0px;
+}
+
+footer .footer-meno {
+  width: 1210px;
+  height: 106px;
+  margin-top: 34px;
+  margin-bottom: 28px;
+}
+
+footer .footer-meno a {
+  float: left;
+}
+
+footer .footer-meno a img {
+  margin-top: 5px;
+}
+
+footer .footer-meno .footer-right {
+  float: right;
+  width: 822px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer .footer-meno .footer-right ul {
+  border-right: 1px solid #ccc;
+  padding: 0 40px;
+  margin-top: 10px;
+}
+
+footer .footer-meno .footer-right ul h4 {
+  padding-top: 4px;
+}
+
+footer .footer-meno .footer-right ul li {
+  width: 90px;
+  padding: 10px 0;
+}
+
+footer .footer-meno .footer-right ul li a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+footer .footer-meno .footer-right ul:last-child {
+  padding-right: 0;
+  border: 0;
+}
+
+footer .footer-nav {
+  width: 1210px;
+  height: 38px;
+  background: #d2d2d2;
+  font-size: 12px;
+}
+
+footer .footer-nav ul {
+  width: 1026px;
+  height: 38px;
+  margin: 0 auto;
+}
+
+footer .footer-nav ul li {
+  margin-top: 10px;
+  float: left;
+  border-right: 1px solid #5a2c5a;
+  padding: 0 15px;
+}
+
+footer .footer-nav ul li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+footer .footer-nav ul li:last-child {
+  padding-right: 0;
+  border: 0;
+}
+
+footer .footer-bottom {
+  width: 100%;
+  height: 65px;
+  background: #0d0e10;
+  overflow: hidden;
+}
+
+footer .footer-bottom .footer-center {
+  width: 364px;
+  margin: 20px auto;
+}
+
+footer .footer-bottom .footer-center a {
+  display: inline-block;
+  margin-left: 8px;
+  height: 28px;
+}

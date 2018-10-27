@@ -1,0 +1,176 @@
+/*注册界面*/
+main{
+    width: 1210px;
+    background: #e8e8e8;
+    margin:0 auto;
+    overflow: hidden;
+    .register{
+        width: 1024px;
+        height: 486px;
+        margin:0 auto;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        background: white;
+        border:1px solid #ccc;
+        .register-left{
+            width: 508px;
+            float: left;
+            color: #2f2f2f;
+            h3{
+                margin-top:42px;
+                height: 40px;
+                border-bottom: 1px solid #ccc;
+                font-weight: normal;
+                padding-left: 22px;
+                span{
+                    display: block;
+                    height: 40px;
+                    width:110px;
+                    line-height: 40px;
+                    border: 1px solid #2f2f2f;
+                    border-bottom: 0;
+                    text-align: center;
+                    font-size: 14px;
+                    float: left;
+                }
+                span:last-child{
+                    text-align: left;
+                    padding-left: 8px;
+                    border: 0;
+                    width: 132px;
+                    background: url(/images/register/register-icon.jpg) no-repeat right center;
+                    a{
+                        margin-left: 2px;
+                        color: #a7212a;
+                    }
+                }
+            }
+            form{
+                width: 366px;
+                height: 240px;
+                margin:0 auto;
+                margin-top:18px;
+                position: relative;
+                @mixin li(){
+                    list-style: none;
+                    font-size: 14px;
+                    color:red;
+                    position: absolute;
+                }
+                .li_email{
+                    @include li();
+                    top: 5px;
+                    right: -105px;
+                }
+                .li_ps{
+                    @include li();
+                    top: 52px;
+                    right: -92px;
+                }
+                .li_rps{
+                    @include li();
+                    top: 98px;
+                    right: -92px;
+                }
+                .li_email_dab{
+                    @include li();
+                    top: 5px;
+                    right: -120px;
+                }
+                .li_email_dable{
+                    @include li();
+                    top: 5px;
+                    right: -92px;
+                }
+                .li_email_able{
+                    @include li();
+                    top: 5px;
+                    right: -66px;
+                    color: #15a158;
+                }
+                span{
+                    display: inline-block;
+                    height: 32px;
+                    line-height: 32px;
+                    float: left;
+                }
+                span:nth-child(3){
+                    margin-top:12px;
+                    letter-spacing: 8px;
+                }
+                input{
+                    width: 289px;
+                    height: 30px;
+                    float: right;
+                    border: 1px solid #ccc;
+                }
+                input:nth-child(4){
+                    margin-top:12px;
+                }
+                span:nth-child(5){
+                    float: left;
+                    margin-top: 12px;
+                    margin-left: -18px;
+                }
+                input{
+                    float: right;
+                }
+                input:nth-child(6){
+                    margin-top:12px;
+                }
+                input:nth-child(7){
+                    float: left;
+                    margin-top:12px;
+                    width: 94px;
+                    height: 29px;
+                    margin-left:138px;
+                    margin-bottom: 12px;
+                    border:0;
+                    cursor: pointer;
+                    background: url(/images/login/button.jpg) no-repeat center center;
+                }
+                p:nth-child(8){
+                    float: left;
+                    font-size: 12px;
+                    padding-left: 96px;
+                    input{
+                        float: left;
+                        width: 12px;
+                        height: 12px;
+                    }
+                    i{
+                        font-style: normal;
+                        color: #a7212a;
+                        font-weight: bold;
+                    }
+                }
+                textarea:nth-child(9){
+                    float: left;
+                    width: 372px;
+                    height: 100px;
+                    font-size: 12px;
+                    width: 366px;
+                    resize: none;
+                    margin-top:12px;
+                    margin-left:52px;
+                }
+            }
+        }
+        .register-right{
+            width: 374px;
+            height: 414px;
+            margin-top: 40px;
+            float: right;
+            margin-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                display: inline-block;
+                width: 333px;
+                height: 414px;
+            }
+        }
+    }
+}
+
